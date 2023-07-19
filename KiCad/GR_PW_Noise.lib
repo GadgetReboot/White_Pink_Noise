@@ -1,0 +1,256 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x04
+#
+DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C_Small
+#
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_L_Core_Iron
+#
+DEF Device_L_Core_Iron L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "Device_L_Core_Iron" 110 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+P 2 0 1 0 40 100 40 -100 N
+P 2 0 1 0 60 -100 60 100 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_POT_US
+#
+DEF Device_R_POT_US RV 0 40 Y N 1 F N
+F0 "RV" -175 0 50 V V C CNN
+F1 "Device_R_POT_US" -100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Potentiometer*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 100 0 90 N
+P 2 0 1 0 100 0 60 0 N
+P 4 0 1 0 45 0 90 20 90 -20 45 0 F
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+X 3 3 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Small_US
+#
+DEF Device_R_Small_US R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Device_R_Small_US" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 5 1 1 0 0 0 40 -15 0 -30 -40 -45 0 -60 N
+P 5 1 1 0 0 60 40 45 0 30 -40 15 0 0 N
+X ~ 1 0 100 40 D 50 50 1 1 P
+X ~ 2 0 -100 40 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Diode_1N5822
+#
+DEF Diode_1N5822 D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_1N5822" 0 -100 50 H V C CNN
+F2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS 1N5821 1N5822 MBR340
+$FPLIST
+ D*DO?201AD*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Reference_Voltage_LM4041LP-ADJ
+#
+DEF Reference_Voltage_LM4041LP-ADJ U 0 1 Y N 1 F N
+F0 "U" 100 150 50 H V C CNN
+F1 "Reference_Voltage_LM4041LP-ADJ" 0 -125 50 H V C CNN
+F2 "Package_TO_SOT_THT:TO-92_Inline" 0 -200 50 H I C CIN
+F3 "" 100 150 50 H I C CIN
+$FPLIST
+ TO?92*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 100 0 20 N
+P 3 0 1 0 -50 0 0 0 50 0 N
+P 4 0 1 8 -50 -50 25 0 -50 50 -50 -50 N
+P 4 0 1 8 0 -50 25 -50 25 50 50 50 N
+X FB 1 0 200 100 D 50 50 1 1 I
+X K 2 150 0 100 L 50 50 1 1 P
+X A 3 -150 0 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_PMIC-Voltage-Reference_LM4040D25FTA
+#
+DEF dk_PMIC-Voltage-Reference_LM4040D25FTA VR 0 0 Y Y 1 F N
+F0 "VR" -100 125 50 H V C CNN
+F1 "dk_PMIC-Voltage-Reference_LM4040D25FTA" -225 0 50 V V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 50 H I L CNN
+F3 "https://www.diodes.com/assets/Datasheets/LM4040.pdf" 200 300 60 H I L CNN
+F4 "LM4040D25FCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LM4040D25FTA" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Reference" 200 700 60 H I L CNN "Family"
+F8 "https://www.diodes.com/assets/Datasheets/LM4040.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/diodes-incorporated/LM4040D25FTA/LM4040D25FCT-ND/1557756" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC VREF SHUNT 2.5V SOT23-3" 200 1000 60 H I L CNN "Description"
+F11 "Diodes Incorporated" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 -50 50 -75 25 N
+P 2 0 1 0 -50 50 50 50 N
+P 2 0 1 0 0 -150 0 -50 F
+P 2 0 1 0 0 50 0 150 N
+P 2 0 1 0 50 50 75 75 N
+P 2 0 1 0 100 0 25 0 N
+P 4 0 1 0 -50 -50 50 -50 0 50 -50 -50 F
+X ~ 1 0 200 150 D 50 50 1 1 P
+X ~ 2 0 -200 150 U 50 50 1 1 P
+X NC 3 200 0 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# extlib_AP3012
+#
+DEF extlib_AP3012 U 0 20 Y Y 1 F N
+F0 "U" -300 225 50 H V L CNN
+F1 "extlib_AP3012" 0 225 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" 25 -250 50 H I L CIN
+F3 "" 0 0 50 H I C CNN
+ALIAS APE1707H-50-HF APE1707H-12-HF APE1707H-HF
+$FPLIST
+ TO?252*TabPin3*
+$ENDFPLIST
+DRAW
+S -300 175 300 -200 0 1 10 f
+X SW 1 400 100 100 L 50 50 1 1 O
+X VSS 2 400 -100 100 L 50 50 1 1 W
+X FB 3 400 0 100 L 50 50 1 1 I
+X EN 4 -400 -100 100 R 50 50 1 1 I
+X VIN 5 -400 100 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_GNDREF
+#
+DEF power_GNDREF #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDREF" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X GNDREF 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
